@@ -223,71 +223,105 @@ export class License {
 	}
 
 	isSharingEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.SHARING);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.SHARING);
 	}
 
 	isLogStreamingEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.LOG_STREAMING);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.LOG_STREAMING);
 	}
 
 	isLdapEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.LDAP);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		// return this.isFeatureEnabled(LICENSE_FEATURES.LDAP);
 	}
 
 	isSamlEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.SAML);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.SAML);
 	}
 
 	isApiKeyScopesEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.API_KEY_SCOPES);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.API_KEY_SCOPES);
 	}
 
 	isAiAssistantEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.AI_ASSISTANT);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.AI_ASSISTANT);
 	}
 
 	isAskAiEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.ASK_AI);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.ASK_AI);
 	}
 
 	isAiCreditsEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.AI_CREDITS);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.AI_CREDITS);
 	}
 
 	isAdvancedExecutionFiltersEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.ADVANCED_EXECUTION_FILTERS);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.ADVANCED_EXECUTION_FILTERS);
 	}
 
 	isAdvancedPermissionsLicensed() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.ADVANCED_PERMISSIONS);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.ADVANCED_PERMISSIONS);
 	}
 
 	isDebugInEditorLicensed() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.DEBUG_IN_EDITOR);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.DEBUG_IN_EDITOR);
 	}
 
 	isBinaryDataS3Licensed() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.BINARY_DATA_S3);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.BINARY_DATA_S3);
 	}
 
 	isMultiMainLicensed() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.MULTIPLE_MAIN_INSTANCES);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.MULTIPLE_MAIN_INSTANCES);
 	}
 
 	isVariablesEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.VARIABLES);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.VARIABLES);
 	}
 
 	isSourceControlLicensed() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.SOURCE_CONTROL);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.SOURCE_CONTROL);
 	}
 
 	isExternalSecretsEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.EXTERNAL_SECRETS);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.EXTERNAL_SECRETS);
 	}
 
 	isWorkflowHistoryLicensed() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.WORKFLOW_HISTORY);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.WORKFLOW_HISTORY);
 	}
 
 	isAPIDisabled() {
@@ -295,19 +329,27 @@ export class License {
 	}
 
 	isWorkerViewLicensed() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.WORKER_VIEW);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.WORKER_VIEW);
 	}
 
 	isProjectRoleAdminLicensed() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.PROJECT_ROLE_ADMIN);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.PROJECT_ROLE_ADMIN);
 	}
 
 	isProjectRoleEditorLicensed() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.PROJECT_ROLE_EDITOR);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.PROJECT_ROLE_EDITOR);
 	}
 
 	isProjectRoleViewerLicensed() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.PROJECT_ROLE_VIEWER);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.PROJECT_ROLE_VIEWER);
 	}
 
 	isCustomNpmRegistryEnabled() {
@@ -315,18 +357,26 @@ export class License {
 	}
 
 	isFoldersEnabled() {
-		return this.isFeatureEnabled(LICENSE_FEATURES.FOLDERS);
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		return true;
+		//return this.isFeatureEnabled(LICENSE_FEATURES.FOLDERS);
 	}
 
 	isInsightsSummaryEnabled() {
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		//return true;
 		return this.isFeatureEnabled(LICENSE_FEATURES.INSIGHTS_VIEW_SUMMARY);
 	}
 
 	isInsightsDashboardEnabled() {
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		//return true;
 		return this.isFeatureEnabled(LICENSE_FEATURES.INSIGHTS_VIEW_DASHBOARD);
 	}
 
 	isInsightsHourlyDataEnabled() {
+		// Modificado para siempre retornar true, sin importar el estado de la licencia
+		//return true;
 		return this.getFeatureValue(LICENSE_FEATURES.INSIGHTS_VIEW_HOURLY_DATA);
 	}
 
@@ -405,10 +455,14 @@ export class License {
 	}
 
 	getTeamProjectLimit() {
-		return this.getFeatureValue(LICENSE_QUOTAS.TEAM_PROJECT_LIMIT) ?? 0;
+		// Modificado para siempre retornar un valor ilimitado
+		return UNLIMITED_LICENSE_QUOTA;
+		//return this.getFeatureValue(LICENSE_QUOTAS.TEAM_PROJECT_LIMIT) ?? 0;
 	}
 
 	getPlanName(): string {
+		// Modificado para siempre retornar un valor ilimitado
+		//return 'UNLIMITED by KrakenStain';
 		return this.getFeatureValue('planName') ?? 'Community';
 	}
 
