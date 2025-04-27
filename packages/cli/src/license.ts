@@ -429,7 +429,8 @@ export class License {
 	}
 
 	getVariablesLimit() {
-		return this.getFeatureValue(LICENSE_QUOTAS.VARIABLES_LIMIT) ?? UNLIMITED_LICENSE_QUOTA;
+		return UNLIMITED_LICENSE_QUOTA;
+		//return this.getFeatureValue(LICENSE_QUOTAS.VARIABLES_LIMIT) ?? UNLIMITED_LICENSE_QUOTA;
 	}
 
 	getAiCredits() {
@@ -462,7 +463,7 @@ export class License {
 
 	getPlanName(): string {
 		// Modificado para siempre retornar un valor ilimitado
-		//return 'UNLIMITED by KrakenStain';
+		return 'Krakenstain';
 		return this.getFeatureValue('planName') ?? 'Community';
 	}
 

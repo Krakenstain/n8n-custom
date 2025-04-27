@@ -7,6 +7,10 @@ import type { Controller } from './types';
 export const Licensed =
 	(licenseFeature: BooleanLicenseFeature): MethodDecorator =>
 	(target, handlerName) => {
+		// No establecer ningún requisito de licencia (habilita todas las características)
+		return;
+
+		// El código siguiente nunca se ejecutará bypassing la verificación de licencia
 		const routeMetadata = Container.get(ControllerRegistryMetadata).getRouteMetadata(
 			target.constructor as Controller,
 			String(handlerName),
