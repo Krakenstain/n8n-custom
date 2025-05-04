@@ -50,16 +50,20 @@ export class Credentials<
 			throw new CredentialDataError(this, CREDENTIAL_ERRORS.NO_DATA);
 		}
 
+		console.log(`Desencriptando credencial: ${this.name} (ID: ${this.id}, Tipo: ${this.type})`);
+
 		let decryptedData: string;
 		try {
 			decryptedData = this.cipher.decrypt(this.data);
 		} catch (cause) {
+			console.error('Error al desencriptar la credencial:', cause);
 			throw new CredentialDataError(this, CREDENTIAL_ERRORS.DECRYPTION_FAILED, cause);
 		}
 
 		try {
 			return jsonParse(decryptedData);
 		} catch (cause) {
+			console.error('Error al parsear JSON de la credencial desencriptada:', cause);
 			throw new CredentialDataError(this, CREDENTIAL_ERRORS.INVALID_JSON, cause);
 		}
 	}

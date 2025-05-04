@@ -11,6 +11,8 @@ export class Cipher {
 	constructor(private readonly instanceSettings: InstanceSettings) {}
 
 	encrypt(data: string | object) {
+		console.log('Iniciando el cifrado de datos con la clave de encriptación', data);
+
 		const salt = randomBytes(8);
 		const [key, iv] = this.getKeyAndIv(salt);
 		const cipher = createCipheriv('aes-256-cbc', key, iv);
@@ -19,13 +21,22 @@ export class Cipher {
 	}
 
 	decrypt(data: string) {
+		console.log('Desencriptando datos con la clave de encriptación');
+		console.log('Datos cifrados:', data);
+		console.log('Data de instancia:', this.instanceSettings);
+
 		const input = Buffer.from(data, 'base64');
 		if (input.length < 16) return '';
 		const salt = input.subarray(8, 16);
 		const [key, iv] = this.getKeyAndIv(salt);
 		const contents = input.subarray(16);
 		const decipher = createDecipheriv('aes-256-cbc', key, iv);
-		return Buffer.concat([decipher.update(contents), decipher.final()]).toString('utf-8');
+
+		const result = Buffer.concat([decipher.update(contents), decipher.final()]).toString('utf-8');
+
+		console.log('Datos desencriptados:', result);
+
+		return result;
 	}
 
 	private getKeyAndIv(salt: Buffer): [Buffer, Buffer] {
