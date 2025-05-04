@@ -254,19 +254,19 @@ export class License {
 
 	isAiAssistantEnabled() {
 		// Modificado para siempre retornar true, sin importar el estado de la licencia
-		return true;
+		return false;
 		//return this.isFeatureEnabled(LICENSE_FEATURES.AI_ASSISTANT);
 	}
 
 	isAskAiEnabled() {
 		// Modificado para siempre retornar true, sin importar el estado de la licencia
-		return true;
+		return false;
 		//return this.isFeatureEnabled(LICENSE_FEATURES.ASK_AI);
 	}
 
 	isAiCreditsEnabled() {
 		// Modificado para siempre retornar true, sin importar el estado de la licencia
-		return true;
+		return false;
 		//return this.isFeatureEnabled(LICENSE_FEATURES.AI_CREDITS);
 	}
 
